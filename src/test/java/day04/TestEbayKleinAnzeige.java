@@ -27,10 +27,14 @@ public class TestEbayKleinAnzeige {
         Thread.sleep(3400);
          WebElement finden= driver.findElement(By.xpath("//*[@id=\"site-search-submit\"]/span"));
          finden.click();
-        //d. EbayKleinanzeige'de görüntülenen ilk ürünü göster
+        //e. EbayKleinanzeige'de görüntülenen ilk ürünü göster
     WebElement ergebnisse=driver.findElement(By.xpath("//*[@id=\"srchrslt-adtable\"]/li[1]/article/div[2]/div[2]/h2/a"));
     ergebnisse.click();
+        //f. Nacjrichten schreiben tusuna basiniz
+       // Thread.sleep(3456);
+        //WebElement nachrichten=driver.findElement(By.xpath("//[text()='Nachricht schreiben']"));
+        //nachrichten.click();
         //. sayfayi kapatin
-        driver.close();
+       driver.close();
     }
 }
