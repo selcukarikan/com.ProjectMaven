@@ -28,7 +28,7 @@ public class C02_Test02 {
         //7. onlinebanking sayfasina gidin
         driver.findElement(By.xpath("//strong[text()='Online Banking']"));
     //6. Pay Bills sayfasina gidin
-        driver.findElement(By.id("pay_bills_link")).click();
+        driver.findElement(By.xpath("//*[@id=\"pay_bills_tab\"]/a")).click();
     //7. amount kismina yatirmak istediginiz herhangi bir miktari yazin
 
     //8. tarih kismina “2020-09-10” yazdirin
