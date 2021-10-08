@@ -13,11 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class C04_CheckBox {
     //1. Bir class oluşturun : CheckBoxTest
     //2. Gerekli yapiyi olusturun ve aşağıdaki görevi tamamlayın.
-
-
     WebDriver driver;
-
-
     @Before
     public void setup(){
         WebDriverManager.chromedriver().setup();
@@ -27,19 +23,19 @@ public class C04_CheckBox {
 
     }@Test
     public void test01(){
-    // a. Verilen web sayfasına gidin.
-    //     https://the-internet.herokuapp.com/checkboxes
+        // a. Verilen web sayfasına gidin.
+        //     https://the-internet.herokuapp.com/checkboxes
         driver.get("https://the-internet.herokuapp.com/checkboxes");
-    // b. Checkbox1 ve checkbox2 elementlerini locate edin.
+        // b. Checkbox1 ve checkbox2 elementlerini locate edin.
         WebElement box1=driver.findElement(By.xpath("(//input[@type='checkbox'])[1]"));
         WebElement box2=driver.findElement(By.xpath("(//input[@type='checkbox'])[2]"));
 
         // c. Checkbox1 seçili değilse onay kutusunu tıklayın
-if (!box1.isSelected()){
-    box1.click();
-}
+        if (!box1.isSelected()){
+            box1.click();
+        }
         // d. Checkbox2 seçili değilse onay kutusunu tıklayın
         if (!box2.isSelected()){
             box2.click();
-    }}
+        }}
 }
