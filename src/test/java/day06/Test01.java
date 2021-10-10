@@ -19,3 +19,9 @@ public class Test01 {
     }
 
 }
+//encok kullanilan JUnit annotionlari
+
+// @Test     @Before
+//@AfterClass
+//@BeforeClass
+//@Ignore (Test sirasinda calistirilmayacaktir.)   @After
